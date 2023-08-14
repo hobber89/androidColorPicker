@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">androidColorPicker</string>
     <string name="pickColorFromAnImageButton">Pick color from an image</string>
+    <string name="selectImageButton">Select image</string>
 </resources>
