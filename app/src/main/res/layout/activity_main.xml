@@ -29,6 +29,14 @@
                 android:layout_weight="100"/> <!-- Fill remaining width with this -->
         </LinearLayout>
 
+        <Button
+            android:id="@+id/pickColorFromAnImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/pickColorFromAnImageButton"
+            android:onClick="onClick"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
