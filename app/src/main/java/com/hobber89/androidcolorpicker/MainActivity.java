@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final int pickColorFromAnImageRequestId = 1;
 
-    private ColorChannelValues currentColor;
-    private StackView currentColorStackView;
+    private static ColorChannelValues currentColor;
+    private static StackView currentColorStackView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +31,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this, PickColorFromImageActivity.class);
             startActivityForResult(intent, pickColorFromAnImageRequestId);
         }
+    }
+
+    public static void setColor(short r, short g, short b) {
+        currentColor.setRGB(r, g, b);
+        currentColorStackView.setBackgroundColor(currentColor.getColor());
     }
 }

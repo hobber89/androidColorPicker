@@ -35,6 +35,12 @@ public class ColorChannelValues {
         this.b = b;
     }
 
+    public void setRGB(short r, short g, short b) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+    }
+
     public int getColor() {
         int a = 255;
         int color = (b & 0xff) + ((g & 0xff) << 8) + ((r  & 0xff) << 16) + (a << 24);

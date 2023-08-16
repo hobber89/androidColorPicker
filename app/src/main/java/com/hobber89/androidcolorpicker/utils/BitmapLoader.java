@@ -11,7 +11,6 @@ public class BitmapLoader {
     public static Bitmap load(Context context, Uri uri) {
         try {
             BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
-            bitmapOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;
             InputStream input = context.getContentResolver().openInputStream(uri);
             Bitmap bitmap = BitmapFactory.decodeStream(input, null, bitmapOptions);
             input.close();
